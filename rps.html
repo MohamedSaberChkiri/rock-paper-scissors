@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="game-titel">Rock Paper Scissors Game !</h1>
+        <h2 class="choice-text">What's Your Choice ?</h2>
+
+    <div class="choice-container">
+
+        <button id="rock" class="game"></button>
+        <button id="paper" class="game"></button>
+        <button id="scissors" class="game"></button>
+
+    </div>
+
+    <p id="choices">Computer Choice : <span id='computer-choice'>nothing</span></p>
+        <p id="winner">Let's see Who Will win </p>
+        <div class="counter">You : <span id="user-score">0</span> | Computer : <span id="pc-score">0</span></div>
+
+    </div>
+    <div class="modal">
+         <div class="modal-content">
+        <h2 id="showWinner">Modal content</h2>
+        
+         <button class="reset">Replay</button>
+  </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

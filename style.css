@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(61, 194, 255);
+}
+.container{
+    margin: 5% auto;
+    background-color: rgb(117, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    width: 40%;
+    height: 500px;
+   
+}
+.choice-container{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#rock:focus, #paper:focus, #scissors:focus{
+transform: scale(0.9);
+}
+#rock,#paper,#scissors{
+    width: 75px;
+    height: 75px;
+    background-size:cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+#rock{
+    background-image: url('./rock.png');
+}
+#paper{
+    background-image: url('./paper.png');
+}
+#scissors{
+    background-image: url('./scissors.png');
+}
+.counter, #winner,#choices{
+    margin-top: 30px;
+}
+#choices{
+    height: 30px;
+    color:white ;
+}
+#computer-choice{
+    background-color:rgb(61, 194, 255) ;
+    padding: 5px;
+    border-radius: 5px;
+}
+.modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+backdrop-filter: blur(5px);
+display: none;
+}
+
+.modal-content {
+
+margin: 15% auto;
+width: 20%;
+height: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:rgb(54, 54, 54);
+padding: 20px;
+border: 1px solid greenyellow;
+color: greenyellow;
+display: none;
+
+}
+.reset{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+.reset:hover{
+    opacity: 90%;
+}
+.reset:active{
+    transform: scale(0.9);
+}

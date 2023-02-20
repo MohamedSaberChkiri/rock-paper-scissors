@@ -2,19 +2,21 @@ body{
     background-color: rgb(61, 194, 255);
 }
 .container{
-    margin: 5% auto;
+    
+    margin: 0 auto;
     background-color: rgb(117, 0, 0);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid rgb(255, 255, 255);
-    width: 40%;
-    height: 500px;
+    width: 50vw;
+    height: 90vh;
    
 }
 .choice-container{
-    width: 300px;
+   
+    width: 30vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -84,11 +86,37 @@ display: none;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px 30px;
+    font-size: 15px;
+    
 }
 .reset:hover{
     opacity: 90%;
 }
 .reset:active{
     transform: scale(0.9);
+}
+.secCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 784px){
+    .container{
+        width: 90vw;
+    }
+    .game-titel{
+        font-size: 25px;
+    }
+    .choice-container{
+        width: 70vw;
+    }
+    .modal-content{
+        width: 40%;
+        
+    }
+
 }

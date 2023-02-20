@@ -74,7 +74,7 @@ function scoreCounter(results){
         cScore++
         pcScore.innerHTML = cScore
         if(cScore === 3){
-           modalBlur.style.display ='block'
+           modalBlur.style.display ='flex'
            modalText.style.display = 'flex'
            modalText.style.border = '2px solid red'
            showWinnerText.innerHTML='YOU LOST !'
@@ -88,7 +88,7 @@ function scoreCounter(results){
         uScore++
         userScore.innerHTML = uScore
         if(uScore === 3){
-           modalBlur.style.display ='block'
+           modalBlur.style.display ='flex'
            modalText.style.display = 'flex'
            modalText.style.border = '2px solid greenyellow'
            showWinnerText.innerHTML='YOU WON !'

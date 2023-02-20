@@ -109,7 +109,10 @@ display: none;
         width: 90vw;
     }
     .game-titel{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .choice-text{
+        font-size: 15px;
     }
     .choice-container{
         width: 70vw;
